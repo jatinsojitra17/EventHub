@@ -9,40 +9,24 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // import ManageEventsPage from './pages/ManageEventsPage/ManageEventsPage.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
-import LoginForm from './components/LoginForm/LoginForm.jsx';
+import LandingPage from './pages/LandingPage/LandingPage.jsx';
+// import LoginForm from './components/LoginForm/LoginForm.jsx';
 import './App.css';
 
 export default function App() {
   // const [user, setUser] = useState(getUser());
-  
+
   return (
     <div className='App'>
       {
-        <LoginForm />
-        // // user ? (
-        //   <>
-        //     <Header />
-        //     {/* <Routes>
-        //       <Route path='/dashboard' element={<DashboardPage user={user} />} />
-        //       <Route path='/manage-events' element={<ManageEventsPage user={user} />} />
-        //       <Route path='/create-event' element={<CreateEventPage user={user} />} />
-        //       <Route path='/events/:eventID' element={<EventShowPage user={user} />} />
-        //       <Route path='/events/:eventID/edit-event' element={<EditEventPage />} />
-        //       <Route path='*' element={<Navigate to='/dashboard' replace />} />
-        //     </Routes> */}
-        //     <Footer />
-        //   </>
-        // // ) : (
-        // //   <>
-        // //     <Header user={user} setUser={setUser} />
-        // //     <Routes>
-        // //       <Route path='/' element={<LandingPage setUser={setUser} />} />
-        // //       <Route path='*' element={<Navigate to='/' replace />} />
-        // //     </Routes>
-        // //     <Footer />
-        // //   </>
-        // // )
-
+        <>
+          <Header />
+          <Routes>
+            <Route path='/' element={<LandingPage />}></Route>
+            <Route path='*' element={<Navigate to='/' replace />}></Route>
+          </Routes>
+          <Footer />
+        </>
       }
     </div>
   );

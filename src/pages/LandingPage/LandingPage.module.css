@@ -1,0 +1,24 @@
+.LandingEventsSection{
+    padding: 50px 0;
+    background-color: #fafdff;
+}
+
+.LandingEventsSection h1{
+    padding: 0 0 15px 100px;
+    font-family: 'DM Serif Display', serif;
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+
+.LandingEventsSection p{
+    padding: 0 100px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.LandingUI{
+    list-style: none;
+    padding: 0;
+    margin: 0 100px;
+}

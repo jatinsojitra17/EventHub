@@ -1,7 +1,7 @@
 import React from "react";
-import * as usersService from '../../utilities/users-service.js';
+// import * as usersService from '../../utilities/users-service.js';
 import styles from './SignUpForm.module.css';
-import signup_img from './assets/signup-img.png'; 
+import signup_img from '../../assets/signup-img.png'; 
 export default class SignUpForm extends React.Component {
   state = {
     name: '',
