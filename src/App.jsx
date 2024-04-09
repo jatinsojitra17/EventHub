@@ -42,9 +42,7 @@ export default function App() {
         // //     <Footer />
         // //   </>
         // // )
-        <div>
-          <h1>hello</h1>
-        </div>
+
       }
     </div>
   );
