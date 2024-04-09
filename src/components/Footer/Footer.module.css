@@ -1,0 +1,51 @@
+
+.footerComponent {
+  color: #ababab;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+  background-color: #152d88;
+  font-family: sans-serif;
+  font-size: small;
+  box-shadow: 0px 0px 5px 0px #222;
+}
+
+.footerComponent > div {
+  width: 183px;
+}
+
+.footerComponent > div > h1 {
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  border: 10px solid white;
+  border-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) 1;
+  padding: 10px 20px;
+  font-size: larger;
+  letter-spacing: 1px;
+}
+
+.footerComponent > div > p {
+  font-size: x-small;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.footerComponent > aside > p > span {
+  color:#fe7162;
+  font-weight: 600;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.connectWith {
+  margin-left: 20px;
+  margin-bottom: 5px
+}
+
+a:not([class]):hover {
+  color: white;
+}
