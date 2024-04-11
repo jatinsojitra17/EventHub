@@ -1,0 +1,35 @@
+.upcomingEventsComponent {
+  background-color: #fafdff;
+  padding: 28px 0 50px 0;
+  min-height: 370px;
+}
+
+.upcomingEventsComponent > h1 {
+  margin-left: 50px;
+  /* padding-top: 25px; */
+  font-family: "DM Serif Display", serif;
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+
+.upcomingEventsComponent > p {
+  margin: 0 50px 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.upcomingEventsUl {
+  list-style: none;
+  padding: 0;
+  margin: 0 50px;
+}
+
+.upcomingEventsUl > h1 {
+  color: black;
+  padding-top: 15px;
+  font-size: x-large;
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
