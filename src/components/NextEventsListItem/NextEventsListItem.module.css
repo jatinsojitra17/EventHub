@@ -1,0 +1,36 @@
+.eventLi {
+  border-bottom: 1px solid lightgrey;
+  /* margin-bottom: 15px; */
+  font-family: sans-serif;
+  cursor: pointer;
+  /* background-color: #f6fbfff7; */
+  padding: 15px 25px;
+  /* border-radius: 10px */
+  border-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) 1;
+}
+
+.eventLi>h4 {
+  color: #fe7162;
+  font-size: small;
+  font-weight: 400;
+}
+
+.eventLi>h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size:larger;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.eventLi>h5 {
+  color: #162d88;
+  font-size: small;
+}
+
+.eventLi>p {
+  margin: 2.5px 0 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
