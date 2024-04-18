@@ -1,0 +1,63 @@
+.userEventsComponent {
+  padding: 25px 0 50px 0;
+  background-color: aliceblue;
+}
+
+.userEventsContainer {
+  margin: 0 50px;
+  border: 10px solid white;
+  border-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%) 1;
+  padding: 20px;
+  background-color: #fafdff;
+}
+
+.yourNextEventsDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yourNextEventsDiv>h3 {
+  /* margin: 0 0 15px 100px; */
+  font-family: "DM Serif Display", serif;
+  font-size: larger;
+  letter-spacing: 1px;
+}
+
+.yourNextEventsDiv>a:not([class]) {
+  /* margin-right: 100px */
+  color: #152d88;
+  text-decoration: none;
+}
+
+.yourNextEventsDiv>a:not([class]):hover {
+  /* margin-right: 100px */
+  color: #152d88;
+  text-decoration: underline;
+}
+
+.userEventsMessage {
+  /* margin: 0 100px 15px; */
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: smaller;
+}
+
+.userEventsUl {
+  list-style: none;
+  padding: 0;
+  /* margin: 0 100px; */
+  margin: 0;
+}
+
+.noUserEventsMessage {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+  color: #fe7162;
+  text-shadow: 1px 1px 1px #94959c;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
