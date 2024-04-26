@@ -1,0 +1,34 @@
+.eventLi {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: #f6fbfff7;
+  padding: 15px 25px;
+  border-radius: 10px
+}
+
+.eventLi > h4 {
+  color: #fe7162;
+  font-size: small;
+  font-weight: 400;
+}
+
+.eventLi > h1 {
+  font-family: 'DM Serif Display', serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.eventLi > h5 {
+  color: #162d88;
+  font-size: smaller;
+}
+
+.eventLi > p {
+  margin: 2.5px 0 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
