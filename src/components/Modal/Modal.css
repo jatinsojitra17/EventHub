@@ -2,19 +2,22 @@
     display: none;
 }
 
-.Modal {
+.modal {
+    /* position: absolute; */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
     background-color: aliceblue;
+    /* padding: 6rem; */
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
-.Overlay {
+.overlay {
+    /* position: absolute; */
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +28,7 @@
     z-index: 5;
 }
 
-.CloseModalbtn {
+.close-modal-btn {
     position: absolute;
     top: 0rem;
     right: 0.5rem;
@@ -36,7 +39,7 @@
     background: none;
 }
 
-.CloseModalbtn:hover {
+.close-modal-btn:hover {
     text-shadow: #bfbfbf 0 1px 12px;
     transition-duration: .1s;
 }
@@ -54,7 +57,7 @@
     text-align: center;
 }
 
-.AttendeeHeading {
+.attendee-heading {
     margin: 16px 0 0 20px;
     font-family: "DM Serif Display", serif;
-  }
+}

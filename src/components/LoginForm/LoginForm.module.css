@@ -47,7 +47,6 @@
   width: fit-content;
   font-family: 'DM Serif Display', serif;
   font-size: xx-large;
-  color: #455EB5;
   /* color: white; */
 }
 
@@ -92,9 +91,4 @@
 .btn:hover {
   background-image: linear-gradient(92.88deg, #455EA1 9.16%, #5643B8 43.89%, #673FC3 64.72%);
   transition-duration: .1s;
-}
-
-.modal-span{
-  color: #455EB5;
-  cursor: pointer;
 }

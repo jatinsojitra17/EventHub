@@ -1,13 +1,12 @@
-import React from "react";
-import SignUpForm from "../SignUpForm/SignUpForm";
-import LoginForm from "../LoginForm/LoginForm";
-import './Modal.module.css'
+import SignUpForm from "../SignUpForm/SignUpForm.jsx";
+import LoginForm from "../LoginForm/LoginForm.jsx";
+import './Modal.css'
 
-function Modal({ setUser, showModal, setShowModal, buttonClicked, setButtonClicked, attendees }) {
+export default function Modal({ setUser, showModal, setShowModal, buttonClicked, setButtonClicked, attendees }) {
     return (
         <>
-            <div className={`Modal ${showModal ? '' : 'hidden'}`}>
-                <button className="CloseModalbtn" onClick={() => { setShowModal(!showModal); if (setButtonClicked) setButtonClicked(null) }}>&times;</button>
+            <div className={`modal ${showModal ? '' : 'hidden'}`}>
+                <button className="close-modal-btn" onClick={() => { setShowModal(!showModal); if (setButtonClicked) setButtonClicked(null) }}>&times;</button>
                 {
                     buttonClicked === 'Sign Up' ? (
                         <SignUpForm setUser={setUser} showModal={showModal} setShowModal={setShowModal} setButtonClicked={setButtonClicked} />
@@ -20,7 +19,7 @@ function Modal({ setUser, showModal, setShowModal, buttonClicked, setButtonClick
                 {
                     attendees ? (
                         <>
-                            <h1 className='AttendeeHeading'>Current attendees</h1>
+                            <h1 className='attendee-heading'>Current attendees</h1>
                             <ul>
                                 {attendees.map(attendee => {
                                     return (
@@ -34,9 +33,7 @@ function Modal({ setUser, showModal, setShowModal, buttonClicked, setButtonClick
                     )
                 }
             </div>
-            <div className={`Overlay ${showModal ? '' : 'hidden'}`} onClick={() => { setShowModal(!showModal); if (setButtonClicked) setButtonClicked(null) }}></div>
+            <div className={`overlay ${showModal ? '' : 'hidden'}`} onClick={() => { setShowModal(!showModal); if (setButtonClicked) setButtonClicked(null) }}></div>
         </>
     );
 }
-
-export default Modal;
