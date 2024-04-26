@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import { User } from '../../models/userModel.js';
+import { JWT_SECRET } from '../../server.js';
 
 export async function create(req, res) {
     try {
@@ -44,5 +45,5 @@ export function checkToken(req, res) {
 
 // Helper function
 function createJWT(user) {
-    return jwt.sign({ user }, process.env.JWT_SECRET, { expiresIn: '24h' })
+    return jwt.sign({ user }, JWT_SECRET, { expiresIn: '24h' })
 }

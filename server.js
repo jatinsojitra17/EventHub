@@ -3,6 +3,10 @@ import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
 import dotenv from 'dotenv';
+dotenv.config();
+
+export const JWT_SECRET = '1ac80104bfa50d08b7c29444ea4c0dae0cf65fbfa9f8805e9b7ffe26ef2890b2';
+
 
 // Without this, we'll get the error: ReferenceError: __dirname is not defined in ES module scope 
 // Using ES Modules, inbuilt globals that were provided to CommonJS code won’t exist. These are: __dirname, __filename, exports, module, and require
@@ -22,11 +26,9 @@ import { checkToken } from './config/checkToken.js';
 import usersRouter from './routes/api/users.js';
 import eventsRouter from './routes/api/events.js';
 
-// Allows us to be able to use a .env file to access environment variables using the process.env object
-dotenv.config();
 
 // Use PORT environment variable or 3001 (to avoid collision with React's dev server if it's using 3000)
-const PORT = process.env.PORT || 3001
+const PORT =  3001;
 
 // Initialize express app
 const app = express();

@@ -84,13 +84,11 @@ export async function getEvent(req, res) {
 // Create a new event document
 export async function createEvent(req, res) {
     try {
-        await Event.create(req.body)
-            .then(createdEvent => {
-                return res.status(201).json({ message: 'Event Created' })
-            })
+        const createdEvent = await Event.create(req.body);
+        return res.status(201).json({ message: 'Event Created', event: createdEvent });
     } catch (error) {
-        console.log(error.message)
-        res.status(400).json({ message: error.message })
+        console.log(error.message);
+        return res.status(400).json({ message: error.message });
     }
 }
 

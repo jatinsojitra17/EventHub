@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+import { JWT_SECRET } from '../server.js';
 
 export function checkToken(req, res, next) {
   // Check for the token being sent in a header or as a query parameter
@@ -8,7 +9,7 @@ export function checkToken(req, res, next) {
     // Remove the 'Bearer ' if it was included in the token header
     token = token.replace('Bearer ', '');
     // Check if token is valid and not expired
-    jwt.verify(token, process.env.JWT_SECRET, function(err, decoded) {
+    jwt.verify(token, JWT_SECRET, function(err, decoded) {
       // If valid token, decoded will be the token's entire payload
       // If invalid token, err will exist
       req.user = err ? null : decoded.user;  
