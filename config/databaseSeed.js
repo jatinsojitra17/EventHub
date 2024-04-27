@@ -4,7 +4,70 @@ import './database.js';
 import { User } from '../models/userModel.js';
 import { Event } from '../models/eventModel.js';
 
-
+/* Users
+[
+  {
+    name: "Barry Dare",
+    email: "barry.dare@gmail.com",
+  },
+  {
+    name: "Greta Franecki",
+    email: "greta.franecki@gmail.com",
+  },
+  {
+    name: "Bertha Rath",
+    email: "bertha.rath@gmail.com",
+  },
+  {
+    name: "Tyreek DuBuque",
+    email: "tyreek.dubuque@gmail.com",
+  },
+  {
+    name: "Christophe Stanton",
+    email: "christophe.stanton@gmail.com",
+  },
+  {
+    name: "Hattie Graham",
+    email: "hattie.graham@gmail.com",
+  },
+  {
+    name: "Adrienne Reinger",
+    email: "adrienne.reinger@gmail.com",
+  },
+  {
+    name: "Sonia Watsica",
+    email: "sonia.watsica@gmail.com",
+  },
+  {
+    name: "Allan Jones",
+    email: "allan.jones@gmail.com",
+  },
+  {
+    name: "Reece Greenfelder",
+    email: "reece.greenfelder@gmail.com",
+  },
+  {
+    name: "Ricardo Stokes",
+    email: "ricardo.stokes@gmail.com",
+  },
+  {
+    name: "Kelsi Kub",
+    email: "kelsi.kub@gmail.com",
+  },
+  {
+    name: "Lydia Beier",
+    email: "lydia.beier@gmail.com",
+  },
+  {
+    name: "Javon Blanda",
+    email: "javon.blanda@gmail.com",
+  },
+  {
+    name: "Alfonso Daniel",
+    email: "alfonso.daniel@gmail.com",
+  },
+]
+*/
 
 // Events
 (async function() {

@@ -14,6 +14,7 @@ export default function Header({ user, setUser }) {
   return (
     <header className={styles.headerComponent}>
       <div className={styles.headerContainer}>
+        {/* <h1 className={styles.headerTitle} onClick={handleClick}>Event Assembly</h1> */}
         <h1 className={styles.headerTitle} onClick={handleClick}>Event Hub</h1>
 
         {

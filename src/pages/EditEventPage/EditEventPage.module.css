@@ -1,132 +1,132 @@
 .editEventPage {
-    background-color: #fafdff;
-    padding: 28px 0 50px;
+  background-color: #fafdff;
+  padding: 28px 0 50px;
 }
 
 .editEventContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 50px;
 }
 
 .editEventHeading {
-    font-family: "DM Serif Display", serif;
-    font-size: xx-large;
-    margin-bottom: 5px;
+  font-family: "DM Serif Display", serif;
+  font-size: xx-large;
+  margin-bottom: 5px;
 }
 
 .editEventBack {
-    color: #152d88;
-    text-decoration: none;
-    font-size: large;
+  color: #152d88;
+  text-decoration: none;
+  font-size: large;
 }
 
 .editEventBack:hover {
-    color: #152d88;
-    text-decoration: underline;
+  color: #152d88;
+  text-decoration: underline;
 }
 
 .editEventSpan {
-    margin-left: 5px;
-    line-height: initial;
+  margin-left: 5px;
+  line-height: initial;
 }
 
 .editEventDelete {
-    margin-left: 5px;
-    color: #152d88;
-    text-decoration: none;
-    font-size: large;
+  margin-left: 5px;
+  color: #152d88;
+  text-decoration: none;
+  font-size: large;
 }
 
 .editEventDelete:hover {
-    color: #152d88;
-    text-decoration: underline;
+  color: #152d88;
+  text-decoration: underline;
 }
 
 .editEventMessage {
-    margin: 0 50px 15px;
-    font-family: sans-serif;
-    font-weight: 400;
+  margin: 0 50px 15px;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 .editForm {
-    margin: 0 50px;
+  margin: 0 50px;
 }
 
 .editForm>label {
-    color: #fe7162;
-    text-shadow: 0 0 #00000069;
-    font-family: "DM Serif Display", serif;
-    font-size: larger;
+  color: #fe7162;
+  text-shadow: 0 0 #00000069;
+  font-family: "DM Serif Display", serif;
+  font-size: larger;
 }
 
 .editForm>p {
-    margin: 0 0 5px 0;
-    font-size: smaller;
-    color: #162d88;
-    text-shadow: 0 0 #00000069;
+  margin: 0 0 5px 0;
+  font-size: smaller;
+  color: #162d88;
+  text-shadow: 0 0 #00000069;
 }
 
 .titleInput {
-    width: 35%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 35px;
-    padding: 0 20px;
+  width: 35%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 20px;
 }
 
 .locationInput {
-    width: 25%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 35px;
-    padding: 0 20px;
+  width: 25%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 20px;
 }
 
 .dateInput {
-    width: 20%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 35px;
-    padding: 0 20px;
+  width: 20%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 20px;
 }
 
 .descriptionInput {
-    width: 35%;
-    margin-bottom: 20px;
-    padding: 5px 20px;
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+  width: 35%;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }
 
 .submitInput {
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: Inter UI, SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    height: 2.5rem;
-    padding: 0 1.6rem;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, .25) 0 3px 8px;
-    transition: all .1s;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: Inter UI, SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .25) 0 3px 8px;
+  transition: all .1s;
 }
 
 .submitInput:hover {
-    background-image: linear-gradient(92.88deg, #455EA1 9.16%, #5643B8 43.89%, #673FC3 64.72%);
-    box-shadow: #423c3c99 0 0 3px;
-    transition-duration: .1s;
+  background-image: linear-gradient(92.88deg, #455EA1 9.16%, #5643B8 43.89%, #673FC3 64.72%);
+  box-shadow: #423c3c99 0 0 3px;
+  transition-duration: .1s;
 }
 
 .errorMessage {
-    color: red !important;
+  color: red !important;
 }

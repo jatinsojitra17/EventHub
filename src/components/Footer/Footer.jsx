@@ -11,7 +11,7 @@ export default function Footer(props) {
         </p>
       </div>
       <aside>
-        <p id="footer-info">Copyright &copy; 2024 <span>Jatin Sojitra & Mihir Rupapara</span> All Rights Reserved</p>
+        <p id="footer-info">Copyright &copy; 2023 <span>Jatin Sojitra & Mihir Rupapara</span> All Rights Reserved</p>
         <hr />
       </aside>
       <div className={styles.personalInfo}>

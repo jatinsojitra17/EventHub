@@ -1,66 +1,64 @@
-.CallToActionSection{
-    display: flex;
-    align-items: center;
-    background-color: aliceblue;
-    min-height: 600px;
+.callToActionSection {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  min-height: 600px;
 }
 
-.TextContainer{
-width: 40%;
-margin-left: 100px;
+.textContainer {
+  width: 40%;
+  margin-left: 100px;
 }
 
-.TextContainer small{
-    color: #6c757d;
-    font-weight: 100;
-    font-family: sans-serif;
-    text-transform: uppercase;
+.textContainer>small {
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
-.TextContainer h1{
-    font-family: 'DM Serif Display', serif;
-    font-size: xxx-large;
-    margin-bottom: 10px;
+.textContainer>h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: xxx-large;
+  margin-bottom: 10px;
 }
 
-.TextContainer p{
-    font-family: sans-serif;
-    font-weight: 400;
-    margin-bottom: 10px;
+.textContainer>p {
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.TextContainer button{
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    height: 2.5rem;
-    padding: 0 1.6rem;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .1s;
-    margin-top: 15px;
+.textContainer>button {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .1s;
+  margin-top: 15px;
 }
 
-.TextContainer button:hover{
-    background-image: linear-gradient(92.88deg, #455EA1 9.16%, #5643B8 43.89%, #673FC3 64.72%);
-    box-shadow: #423c3c99 0 0 3px;
-    transition-duration: .1s;
+.textContainer>button:hover {
+  background-image: linear-gradient(92.88deg, #455EA1 9.16%, #5643B8 43.89%, #673FC3 64.72%);
+  box-shadow: #423c3c99 0 0 3px;
+  transition-duration: .1s;
 }
 
-.imgContainer{
-    width: 60%;
+.imgContainer {
+  width: 60%;
 }
 
-.imgContainer img{
-    max-width: 70%;
-    display: block;
-    margin: 0 auto;
-    padding: 90px 0;
+.imgContainer>img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding: 90px 0;
 }

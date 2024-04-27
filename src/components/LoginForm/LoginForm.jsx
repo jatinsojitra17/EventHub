@@ -1,11 +1,9 @@
 import { useState } from 'react';
-// import * as usersService from '../../utilities/users-service.js';
+import * as usersService from '../../utilities/users-service.js';
 import styles from './LoginForm.module.css';
 import signin_img from '../../assets/signin-img.png';
 
-export default function LoginForm({ 
-  setUser, showModal, setShowModal, setButtonClicked 
-}) {
+export default function LoginForm({ setUser, showModal, setShowModal, setButtonClicked }) {
   const [error, setError] = useState('');
   const [credentials, setCredentials] = useState({
     email: '',

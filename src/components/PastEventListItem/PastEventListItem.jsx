@@ -9,7 +9,7 @@ export default function EventListItem({ setUser, title, date, location, descript
   const eventDate = new Date(date);
   const eventTime = eventDate.toLocaleTimeString().substring(0, 4) + eventDate.toLocaleTimeString().substring(7);
 
-  return (
+  return (  
     <>
       <li className={styles.eventLi} onClick={() => { setShowSignUpModal(!showSignUpModal); setButtonClicked('Sign Up') }}>
         <h4>{eventDate.toDateString()}&nbsp;&bull;&nbsp;{eventTime}</h4>

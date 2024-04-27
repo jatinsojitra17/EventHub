@@ -3,12 +3,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import * as eventsService from '../../utilities/events-service.js';
 import styles from './UpcomingEventsListItem.module.css';
 
-export default function UpcomingEventsListItem({ setDeletedEvent, setRsvp, user, _id, title, date, location, description, createdBy, attendees}) {
+export default function UpcomingEventsListItem({ setDeletedEvent, setRsvp, user, _id, title, date,endDate,seats, location, description, createdBy, attendees}) {
   const navigate = useNavigate();
   const [userIsAttendee, setUserIsAttendee] = useState(null);
 
   const eventDate = new Date(date);
   const eventTime = eventDate.toLocaleTimeString().substring(0, 4) + eventDate.toLocaleTimeString().substring(7);
+  const EndingDate = new Date(endDate);
+  const EndingTime = EndingDate.toLocaleTimeString().substring(0, 4) + EndingDate.toLocaleTimeString().substring(7);
 
   function handleClick(e) {
     e.preventDefault();
@@ -81,9 +83,10 @@ export default function UpcomingEventsListItem({ setDeletedEvent, setRsvp, user,
         }
       </div>
       <div  onClick={handleClick}>
-        <h4>{eventDate.toDateString()}&nbsp;&bull;&nbsp;{eventTime}</h4>
+        <h4>Starting At : {eventDate.toDateString()}&nbsp;&bull;&nbsp;{eventTime}</h4>
+        <h4>Ending At : {EndingDate.toDateString()}&nbsp;&bull;&nbsp;{EndingTime}</h4>
         <h1>{title}</h1>
-        <h5>{location}&nbsp;&bull;&nbsp;{attendees.length} attendee{attendees.length === 1 ? '' : 's'}</h5>
+        <h5>{location.toUpperCase()}&nbsp;&bull;&nbsp;{attendees.length} attendee{attendees.length === 1 ? '' : 's'}&nbsp;&bull;&nbsp; Available Seats : {seats - attendees.length}&nbsp;&bull;&nbsp; Total Seats : {seats}</h5>
         {description ? <p>{description}</p> : <p>No description.</p>}
       </div>
     </li>

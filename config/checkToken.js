@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { JWT_SECRET } from '../server.js';
+import { JWT_SECRET } from '../server.js'; // Importing JWT_SECRET from the config file
 
 export function checkToken(req, res, next) {
   // Check for the token being sent in a header or as a query parameter

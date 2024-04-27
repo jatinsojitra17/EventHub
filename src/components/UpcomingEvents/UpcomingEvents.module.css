@@ -6,6 +6,7 @@
 
 .upcomingEventsComponent > h1 {
   margin-left: 50px;
+  /* padding-top: 25px; */
   font-family: "DM Serif Display", serif;
   font-size: xx-large;
   margin-bottom: 15px;

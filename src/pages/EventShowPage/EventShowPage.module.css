@@ -1,81 +1,81 @@
 .eventShowPage {
-    padding: 50px 50px;
-    background-color: #fafdff;
+  padding: 50px 50px;
+  background-color: #fafdff;
 }
 
 .eventShowHost {
-    font-weight: 400;
-    margin-bottom: 15px;
-    width: fit-content;
-    font-size: x-large;
-    font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  width: fit-content;
+  font-size:x-large;
+  font-family: sans-serif;
 }
 
-.eventShowHost>span {
-    font-size: smaller;
+.eventShowHost > span {
+  font-size:smaller;
 }
 
 .eventShowContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .eventShowEdit {
-    color: #152d88;
-    text-decoration: none;
-    font-size: large;
+  color: #152d88;
+  text-decoration: none;
+  font-size: large;
 }
 
 .eventShowEdit:hover {
-    color: #152d88;
-    text-decoration: underline;
+  color: #152d88;
+  text-decoration: underline;
 }
 
 .eventShowSpan {
-    margin-left: 5px;
-    line-height: initial;
+  margin-left: 5px;
+  line-height: initial;
 }
 
 .eventShowDelete {
-    margin-left: 5px;
-    color: #152d88;
-    text-decoration: none;
-    font-size: large;
+  margin-left: 5px;
+  color: #152d88;
+  text-decoration: none;
+  font-size: large;
 }
 
 .eventShowDelete:hover {
-    color: #152d88;
-    text-decoration: underline;
+  color: #152d88;
+  text-decoration: underline;
 }
 
 .eventShowTitle {
-    font-family: "DM Serif Display", serif;
-    margin: 0 0 10px 0;
-    font-size: xxx-large;
+  font-family: "DM Serif Display", serif;
+  margin: 0 0 10px 0;
+  font-size: xxx-large;
 }
 
 .detailsContainer {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom:20px;
 }
 
 .eventShowDate {
-    margin-right: 10px;
-    color: #fe7162;
+  margin-right: 10px;
+  color: #fe7162;
 }
 
 .eventShowLocation {
-    margin-left: 10px;
-    color: #162d88;
+  margin-left: 10px;
+  color: #162d88;
 }
 
-.eventShowLocation>span {
-    text-decoration: underline;
-    cursor: pointer;
+.eventShowLocation > span {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .eventShowDescription {
-    margin: 0;
-    font-size: larger;
+  margin: 0;
+  font-size: larger;
 }

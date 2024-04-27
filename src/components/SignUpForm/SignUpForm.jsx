@@ -1,7 +1,8 @@
 import React from "react";
-// import * as usersService from '../../utilities/users-service.js';
+import * as usersService from '../../utilities/users-service.js';
 import styles from './SignUpForm.module.css';
 import signup_img from '../../assets/signup-img.png'; 
+
 export default class SignUpForm extends React.Component {
   state = {
     name: '',
@@ -24,8 +25,10 @@ export default class SignUpForm extends React.Component {
       const formData = {...this.state};
       delete formData.error;
       delete formData.confirm;
+      console.log('Form Data:', formData); // Add this line
 
       const user = await usersService.signUp(formData);
+      console.log('Signup Response:', user); // Log the response
       this.props.setUser(user)
       this.props.setShowModal(!this.props.showModal)
       this.props.setButtonClicked(null)
