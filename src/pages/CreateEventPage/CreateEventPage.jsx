@@ -14,7 +14,8 @@ export default function CreateEventPage({ user }) {
     location: '',
     description: '',
     createdBy: user._id,
-    attendees: []
+    attendees: [],
+    approved: false
   })
 
   function handleChange(e) {
@@ -27,10 +28,11 @@ export default function CreateEventPage({ user }) {
     setFormData({ ...formData, [e.target.name]: e.target.value })
     setError('')
   }
-
+  
   async function handleSubmit(e) {
     e.preventDefault();
     try {
+      setFormData({...formData, approved: false})
       const createdEvent = await eventsService.createEvent(formData)
       navigate('/dashboard')
     } catch (error) {

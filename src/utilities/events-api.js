@@ -23,6 +23,7 @@ export async function getEvent(eventID) {
   return res.json();
 }
 
+
 export async function createEvent(formData) {
   const res = await fetch('/api/events/new', {
     method: 'POST',
@@ -61,5 +62,11 @@ export async function cancelRsvpEvent(eventID, userData) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(userData)
   });
+  return res.json();
+}
+
+
+export async function getEventsAwaitingApproval(){
+  const res = await fetch('/api/events/approved');
   return res.json();
 }

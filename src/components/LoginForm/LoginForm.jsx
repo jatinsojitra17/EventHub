@@ -23,6 +23,7 @@ export default function LoginForm({ setUser, showModal, setShowModal, setButtonC
       setUser(user)
       setShowModal(!showModal)
       setButtonClicked(null)
+      
     } catch(error) {
       console.log(error.message)
       setError('Log In Failed - Try Again');

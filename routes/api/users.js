@@ -8,4 +8,5 @@ router.post('/', usersController.create)
 router.post('/login', usersController.login)
 router.get('/check-token', ensureLoggedIn, usersController.checkToken)
 
+
 export default router;

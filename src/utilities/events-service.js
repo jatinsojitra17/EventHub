@@ -1,5 +1,11 @@
 import * as eventsAPI from './events-api.js';
 
+
+export async function getEventsAwaitingApproval(){
+  const events = await eventsAPI.getEventsAwaitingApproval();
+  return events;
+}
+
 export async function getPastEvents(numOfEvents) {
   const pastEvents = await eventsAPI.getPastEvents(numOfEvents);
   return pastEvents;

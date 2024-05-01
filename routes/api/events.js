@@ -13,4 +13,7 @@ router.put('/:eventID', eventsController.editEvent)
 router.delete('/:eventID', eventsController.deleteEvent)
 router.put('/rsvp/:eventID', eventsController.rsvpEvent)
 router.put('/cancel-rsvp/:eventID', eventsController.cancelRsvpEvent)
+router.get('/approved', eventsController.getEventsAwaitingApproval);
+router.put('/:id/approve', eventsController.approveEvent);
+router.put('/:id/reject', eventsController.rejectEvent);
 export default router;
