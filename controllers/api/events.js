@@ -1,5 +1,35 @@
 import { Event } from '../../models/eventModel.js';
 
+
+export async function getEventsAwaitingApproval(req, res) {
+  try {
+    const events = await Event.find({ approved: false });
+    res.json(events);
+    console.log("1",events);
+  } catch (error) {
+    // res.status(500).json({ message: error.message });
+  }
+}
+
+export async function approveEvent(req, res) {
+  try {
+    const event = await Event.findByIdAndUpdate(req.params.id, { approved: true }, { new: true });
+    res.json(event);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+}
+
+export async function rejectEvent(req, res) {
+  try {
+    const event = await Event.findByIdAndDelete(req.params.id); 
+    res.json(event);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+}
+
+
 // Query for events whose date are from before today's date
 export async function getPastEvents(req, res) {
   const { numOfEvents } = req.params;
